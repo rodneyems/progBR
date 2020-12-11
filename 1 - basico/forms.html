@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulários</title>
+        <!--<link rel="stylesheet" href="style.css">-->
+    </head>
+
+    <body>
+        Os dados irão para a URL - Método GET - Geralmente pesquisas
+        <form method="GET" action="/cadastro">
+            <input type="text" name="e-mail" placeholder="E-mail">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="submit">
+        </form>
+        <br><br><br>
+
+        Os dados não irão para a URL - Método POST - Geralmente login
+        <form method="POST" action="/cadastro">
+            <input type="text" name="e-mail">
+            <input type="text" name="nome">
+            <input type="submit">
+        </form>
+        <br><br><br>
+
+        Pesquisa Youtube
+        <form method="GET" action="https://www.youtube.com/results?">
+            <input type="text" name="search_query">
+            <input type="submit">
+        </form>
+        <br><br><br>
+        
+        Pesquisa Youtube
+        <form method="GET" action="https://www.youtube.com/results?">
+            <input type="text" name="search_query">
+            <input type="submit">
+        </form>
+        <br><br><br>
+
+        Fomulário Básico
+        <form method="GET" action="/cadastro">
+            <input type="text" name="nome">Nome
+            <input type="password" name="senha">Senha<br>
+            <input type="checkbox" name="cursos" value="reactnative">React Native<br>
+            <input type="checkbox" name="cursos" value="react">React<br>
+            <input type="radio" name="gender" value="M">Masculino
+            <input type="radio" name="gender" value="M">Feminino<br>
+            <select name="estado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select><br>
+            Texto<br>
+            <textarea name="menssagem" cols="30" rows="10"></textarea><br>
+            Cor
+            <input type="color" name="cor"><br>
+            Data
+            <input type="date" name="data"><br>
+            Arquivo
+            <input type="file" name="arquivo"><br><!--Temque ser POST-->
+            Númeor limitado
+            <input type="number" name="numero" min="0" max="30"><br><!--Número limitado-->
+            Range
+            <input type="range" name="range" min="0" max="60"><br>
+            E-mail
+            <input type="email" name="email" placeholder="E-mail" id=""><br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar :D">
+
+
+        </form>
+    </body>
+
+</html>

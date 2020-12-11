@@ -1,0 +1,30 @@
+body{
+    background: tomato;
+}
+.container{
+    font-size: 22px;
+    box-sizing: border-box;
+    padding: 25px;
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    background-image: url("imagens/backgorund.png");
+    background-repeat:no-repeat ;
+    background-size: contain;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    font-size: 18px;
+}
+
+.instagram {
+    list-style-image: url("imagens/Insta.png");
+}
+.twitter {
+    list-style-image: url("imagens/Twitter.png");
+}
+.youtube {
+    list-style-image: url("imagens/Youtube.png");
+}
+

@@ -1,0 +1,66 @@
+body{
+    background: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chartreuse;
+    font-weight: bolder;
+    min-height: 100% - 2vh;
+    margin: 2vh;
+    position: relative;
+}
+
+.menu{
+    overflow: hidden;
+    background: sienna;
+    padding: 3vh;
+}
+.logo{
+    float: left;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+}
+
+li{
+    margin-left: 10px;
+    float: left;
+}
+.content{
+    padding-bottom: 119px;
+}
+footer{
+    position: absolute;
+    bottom:0px;
+    display: block;
+    width: 100%;
+
+}
+.rodape{
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+
+    .logo{
+        display: block;
+        text-align: center;
+        float: none;
+    }
+
+    ul{
+        display: block;
+        text-align: center;
+        float: none;
+    }
+    li{
+        margin: 0px;
+        display: block;
+        background: black;
+        margin-top: 5px;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+}
