@@ -1,0 +1,24 @@
+body{
+    background: black;
+    color: white;
+}
+
+.paragrafo{
+    font-size: 30px;
+}
+.paragrafo2{
+    font-size: 50px;
+    color: tomato;
+}
+.formContainer{
+    width: 100%;
+}
+.button{
+    font-size: 30px;
+    background: rgb(20, 3, 255);
+    padding: 15px;
+    display: inline-block;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+}
