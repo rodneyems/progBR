@@ -1,0 +1,123 @@
+:root{
+    --red: rgba(240, 4, 4, 0.911);
+    
+}
+*{  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.marginBottom{
+    margin-bottom: 10px;
+}
+body{
+    padding: 15px;
+    background-image: url("../images/backgroundPage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    border-radius: 25px 25px 0px 0px;
+    background: var(--red);
+    text-align: center;
+
+}
+.title{
+    margin: 0;
+    padding: 2vh;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+}
+section{
+    background-color: black;
+    background-image: url("../images/people.jpg");
+    background-repeat: no-repeat;
+    background-size:1000px;
+    overflow: hidden;
+}
+.formContainer{
+    margin: 10px;
+    float: right;
+    padding: 30px;
+    background-color: rgba(226, 207, 207, 0.938);
+    text-align: justify;
+    max-width: 200px;
+}
+input, select{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-style: none;
+}
+input[type="submit"]{
+    font-weight: 600;
+    font-size: 20px;
+    border-style: outset;
+    background: var(--red)
+}
+::placeholder, select{
+    font-size: 15px;
+}
+
+select{
+    appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+footer{
+    padding: 15px;
+    background: rgba(34, 34, 34, 0.699);
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+
+}
+.colorWhite{
+    color: white;
+}
+.spk{
+    font-size: 15px;
+}
+.imgspk{
+    margin: 10px;
+    border-radius: 50%;
+    border-style: double;
+    border-width: 5px;
+    border-color: var(--red);
+}
+.namespk{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.spkdescription{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding: 15px;
+    }
+
+    .formContainer{
+        margin:15px auto;
+        float: none;
+    }
+}
