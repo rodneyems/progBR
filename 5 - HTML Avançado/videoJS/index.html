@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <video id="video1" src="video.mp4"></video>
+            <div class="controls">
+                <img class="bt" onclick="retro(video)" src="back.png" alt="play">
+                <img class="bt" onclick="avanc(video)" src="front.png" alt="play">
+                <img class="bt" onclick="play(video)" src="play.png" alt="play">
+                <img class="bt" onclick="slow(video)" src="-.png" alt="play">
+                <img class="bt" onclick="fast(video)" src="+.png" alt="play">
+                <img class="bt" onclick="pause(video)" src="pause.png" alt="play">
+                <img class="bt" onclick="mutar(video)" src="mute.png" alt="play">
+            </div>
+        </div>
+        <p>ICONFINDER.COM</p>
+        
+        <h1>VIDEO YOUTUBE COM IFRAME (INCORPORAR)</h1>
+        <div class="container">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/JsrriTWE94I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h1>PARA AUDIO</h1> 
+        <div class="player">
+            <audio id="audio">
+                <source src="audio.mp3" type="audio/mp3">
+                    <!-- <source src="SOURCE" type="audio/ogg"> -->
+            </audio>
+            <div class="audioControls">
+                <img class="bta" onclick="retro(audio)" src="back.png" alt="play">
+                <img class="bta" onclick="avanc(audio)" src="front.png" alt="play">
+                <img class="bta" onclick="play(audio)" src="play.png" alt="play">
+                <img class="bta" onclick="slow(audio)" src="-.png" alt="play">
+                <img class="bta" onclick="fast(audio)" src="+.png" alt="play">
+                <img class="bta" onclick="pause(audio)" src="pause.png" alt="play">
+                <img class="bta" onclick="mutar(audio)" src="mute.png" alt="play">
+            </div>
+        </div>
+                    
+        <script src="script2.js"></script>
+    </body>
+</html>

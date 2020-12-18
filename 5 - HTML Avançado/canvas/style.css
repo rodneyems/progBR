@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+.tela{
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(66, 65, 65);
+}
+
+.quadrado{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: chartreuse;
+}
+
+.telaBack{
+    background-color: rgb(66, 65, 65);
+}

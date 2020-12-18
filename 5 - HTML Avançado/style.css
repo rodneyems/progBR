@@ -1,0 +1,7 @@
+body{
+    background-color: black;
+    color: cornsilk;
+}
+.block{
+    display: inline-block;
+}
