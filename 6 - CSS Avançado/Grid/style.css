@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+    font-size: 25px;
+}
+
+/* 
+    Grid GAP = Margin do css porém entre as "linhas"
+    items = div em relação ao grid (linha/coluna)
+    content = coluna(a) e linha(j) ficam do tamanho da nossa div
+*/
+.container{
+    height: 300px;
+    padding: 10px;
+    background-color: brown;
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.container2{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: brown;
+    display: grid;
+    grid-template: auto auto auto auto / auto auto auto auto auto auto;
+}
+
+
+.square{
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.r1{
+    background-color: gold;
+    color: black;
+}
+.r2{
+    background-color: blueviolet;
+    color: black;
+}
+.r3{
+    background-color: coral;
+    color: black;
+}
+.r4{
+    background-color: darkolivegreen;
+    color: black;
+}
+.r5{
+    background-color: goldenrod;
+    color: black;
+}
+.r6{
+    background-color: ghostwhite;
+    color: indigo;
+}
+
+.r11{
+    background-color: gold;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+}
+.r21{
+    background-color: blueviolet;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.r31{
+    background-color: coral;
+    color: black;
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.r41{
+    background-color: darkolivegreen;
+    color: black;
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+}
+.r51{
+    background-color: goldenrod;
+    color: black;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.r61{
+    background-color: ghostwhite;
+    color: indigo;
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+}
+
+.container3{
+    background-color: brown;
+    margin-top: 10px;
+    display: grid;
+    padding: 10px;
+    grid-template-areas:"a2 a2 a2 a2 a2 a2"
+                        "a1 a1 a3 a3 a3 a3"
+                        "a1 a1 a5 a4 a4 a4"
+                        "a6 a6 a6 a6 a6 a6"
+                        ;
+}
+
+.r13{
+    background-color: gold;
+    color: black;
+}
+.r23{
+    background-color: blueviolet;
+    color: black;
+}
+.r33{
+    background-color: coral;
+    color: black;
+}
+.r43{
+    background-color: darkolivegreen;
+    color: black;
+}
+.r53{
+    background-color: goldenrod;
+    color: black;
+}
+.r63{
+    background-color: ghostwhite;
+    color: indigo;
+}
+
+.item1{
+    grid-area: a1;
+}
+
+.item2{
+    grid-area: a2;
+}
+.item3{
+    grid-area: a3;
+}
+.item4{
+    grid-area: a4;
+}
+.item5{
+    grid-area: a5;
+}
+.item6{
+    grid-area: a6;
+}

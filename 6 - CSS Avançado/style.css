@@ -1,0 +1,123 @@
+*{
+    background-color: black;
+    color: blanchedalmond;
+}
+p::first-line{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+p::first-letter{
+    color: blueviolet;
+}
+
+p::selection{
+    background-color: blueviolet;
+    color: chartreuse;
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(scor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle
+}
+
+#testeMaiorQ > p::first-line {
+    font-size: 20px;
+} 
+/* Seleciona se corresponder em alguma partre da string */
+/* [title*=ect]{
+    background-color: chartreuse;
+} */
+/* Seleciona correpondente */
+/* [title=select2]{
+    background-color: chartreuse;
+} */
+/* Igual no final */
+/* [title$="3"]{
+    background-color: chartreuse;
+} */
+/* Igual no inicio */
+/* [title$="3"]{
+    background-color: chartreuse;
+} */
+
+ul{
+    width: 300px;
+}
+#testesPseudo li::before{
+    list-style: circle;
+    content: none;
+    display: block;
+}
+
+.item:nth-child(even){
+    background-color: beige;
+    color: black;
+}
+
+.item:nth-child(odd){
+    background-color: cadetblue;
+}
+
+.item:first-child{
+    font-size: 30px;
+}
+.item:last-child{
+    font-size: 30px;
+}
+
+h1:only-child{
+    color: chartreuse;
+}
+
+.calc{
+    width: 100%;
+    height: 500px;
+    background-color: chartreuse;
+}
+
+.insideCalc{
+    width: calc(100% - 200px);
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+.insideCalc h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+.insideCalc2{
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.linha{
+    left: -50px;
+    top: 50px;
+    position: absolute;
+    color: darkblue;
+    padding: 5px;
+    background-color: chocolate;
+    width: 200px;
+    display: block;
+    transform: rotate(-45Deg);
+}
+
+    
+

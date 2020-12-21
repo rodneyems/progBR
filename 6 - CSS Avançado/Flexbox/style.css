@@ -1,0 +1,55 @@
+/* 
+align-content = ajustando as linhas do flex box para o taman ho do elemnto no sentido do eixo 
+justify-content = alinha os itens  no sentido ao eixo
+align-itens = alinhas os itens no sentido contrario ao eixo (column ou row)
+*/
+.container{
+    background-color: black;
+    height: 400px;
+    color: cornsilk;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.r1{
+    background-color: darkblue;
+    order: 2;
+}
+.r2{
+    order:3;
+    flex-shrink: 0;
+    background-color: darkgreen;
+}
+.r3{
+    align-self: flex-start;
+    flex-grow: 1;
+    background-color: darkslategray;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+}
+.container2{
+    margin-top: 50px;
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.r4{
+    background-color: darkblue;
+
+}
+.r5{
+    background-color: darkgreen;
+}
