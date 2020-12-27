@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+#table{
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    grid-gap: 2px;
+    justify-content: center;
+}
+
+.square{
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 5rem;
+    height: 5rem;
+    background-color: brown;
+    display: grid;
+    align-content: center;
+    transition: 1s ease all;
+}
+
+.square:hover{
+    background-color: rgba(165, 42, 42, 0.822);
+}
+
+.x:after{
+    font-size: 3rem;
+    content: "\274C";
+}
+
+.o:after{
+    font-size: 3rem;
+    content: "\2B55";
+}
+
+#placar{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: 15rem;
+    background-color: brown;
+    display: grid;
+    grid-template-areas:    "a1 a2 a3"
+                            "a4 a2 a5";
+}
+
+#reset{
+    border-radius: 20px;
+    width: 15rem;
+    margin: 20px;
+    transition: 1s ease all;
+}
+
+#player1{
+    grid-area: a1;
+}
+#player2{
+    grid-area: a3;
+}
+#versus{
+    font-size: 25px;
+    grid-area: a2;
+}
+#placar1{
+    font-size: 30px;
+    grid-area: a4;
+}
+#placar2{
+    font-size: 30px;
+    grid-area: a5;
+}
+.placar{
+    font-size: px;
+}
+
+.squareWins{
+    border: 3px solid yellow;
+}
