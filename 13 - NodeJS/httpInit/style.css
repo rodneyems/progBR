@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(5, 4, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    background-color: rgb(11, 9, 117);
+    color: linen;
+    width: 500px;
+    height: 300px;
+}
