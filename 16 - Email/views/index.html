@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Vamos enviar um e-mail</h1>
+    <form action="/contato" method="post">
+        <input class="fieldForm" type="text" name="subject" id="subject" placeholder="Assunto">
+        <input class="fieldForm" type="text" name="to" id="to" placeholder="Digite o e-mail de destino">
+        <textarea class="fieldForm" name="content" id="content" cols="30" rows="10" placeholder="Conteúdo"></textarea>
+        <button class="fieldForm" type="submit">Enviar</button>
+    </form>
+</body>
+</html>

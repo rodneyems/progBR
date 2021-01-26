@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+form{
+    text-align: center;
+    width: 500px;
+}
+.fieldForm{
+    box-sizing: border-box;
+    width: 100%;
+}
