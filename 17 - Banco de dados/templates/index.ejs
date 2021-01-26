@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Cadastro de links</h1>
+    <form action="/" method="post">
+        <input type="text" name="title" class="field" placeholder="title" value="<%=body.title%>" required>
+        <input type="text" name="description" class="field" placeholder="Description" value="<%=body.description%>">
+        <input type="text" name="url" class="field" placeholder="url" value="<%=body.url%>" required>
+        <button type="submit">Salver</button>
+    </form>
+
+    <%if(error){%>
+    <h3> <%=error.message%></h3>
+    <%}%>
+
+</body>
+</html>

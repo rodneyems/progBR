@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <%for(link of links){%>
+        <div id="<%=link._id%>">
+            <h2><%=link.title%></h2>
+            <h3><%=link.description%></h2>
+            <h3><%=link.url%></h2>
+            <button onclick="removeLink('<%=link._id%>')">DELETAR</button>
+        </div>
+    <%}%>
+    
+
+</body>
+</html>
+
+<!-- METODO MAIS TRABALHOSO E ERRADO, SEM O METHOD OVERRRIDE -->
+<!-- <button onclick="removeLink('<%=link._id%>')">DELETAR</button> -->
+            <!-- <script>
+                function removeLink(id){
+                    console.log(id)
+                    fetch('/' + id, {method:'DELETE'}).then(res=>{
+                        if(res.status == 200){
+                            res.text().then((linkId)=>{
+                                document.getElementById(linkId).remove  
+                                location.reload()
+                            })
+
+
+                            
+                        }else{
+                            res.json().then(err=>{
+                                console.log(err)
+                                alert(err)
+                            })
+                        }
+                    })
+                }
+            </script> -->
