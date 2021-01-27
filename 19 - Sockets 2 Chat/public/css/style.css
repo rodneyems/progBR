@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgb(32, 30, 30);
+}
+
+#messages{
+    background-color: rgb(73, 59, 59);
+    max-width: 100%;
+    width: 500px;
+    height: 50vh;
+    margin: auto;
+}
+
+input{
+    height: 50px;
+    max-width: 100%;
+    width: 435px;
+}
+
+/* FOR RESPONSIVE LAYOUTS */
+/* @media screen and (max-width: 500px){
+    body{
+        padding: 15px;
+    }
+
+    .formContainer{
+        margin:15px auto;
+        float: none;
+    }
+} */
