@@ -1,0 +1,16 @@
+body{
+    color: blanchedalmond;
+    background-color: black;
+}
+
+/* FOR RESPONSIVE LAYOUTS */
+/* @media screen and (max-width: 500px){
+    body{
+        padding: 15px;
+    }
+
+    .formContainer{
+        margin:15px auto;
+        float: none;
+    }
+} */
