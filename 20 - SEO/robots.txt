@@ -1,0 +1,12 @@
+User-agent: Googlebot                   //PERMITE BOT GOOGLE
+Disallow:
+
+User-agent: Bingbot                   //N PERMITE BOT BING
+Disallow: /
+
+
+
+User-agent: *                           //TODOS
+Disallow: /admin
+Disallow: /Images
+Allow: /Images/logo.png
