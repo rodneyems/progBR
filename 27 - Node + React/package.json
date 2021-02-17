@@ -1,0 +1,21 @@
+{
+  "name": "node-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-back": "nodemon index.js",
+    "start-front": "npm start --prefix front",
+    "start-dev": "concurrently \"npm run start-front\" \"npm run start-back\"",
+    "postinstall": "npm install --prefix front"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browsersync": "0.0.1-security",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
