@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Esse é um titulo</h1>
+    <h1 class="titulo2">Esse é outro</h1>
+    <h1 class="exit" style="display: none;">NAO SAI AGORA</h1>
+    <button id="button">FADE</button>
+    <div class="square" id="square"></div>
+    <button id="button2">SLIDE</button>
+    <div class="square" id="square2"></div>
+    <button id="button3">ANIMATE</button>
+    <button id="buttonStop">STOP</button>
+    <div class="square" id="square3"></div>
+    <h3>Automatico</h3>
+    <div class="square" id="square4"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        $(".titulo").hide()
+        setTimeout(()=>{
+        $(".titulo").show()
+        },3000)
+
+        $(".titulo2").click(()=>{
+            console.log("Mouse Click")
+        })
+        $(".titulo2").mouseenter(()=>{
+            console.log("Mouse mouseenter")
+        })
+        $(".titulo2").mouseleave(()=>{
+            console.log("Mouse mouseleave")
+        })
+        $(".titulo2").dblclick(()=>{
+            console.log("Mouse dblclick")
+        })
+
+        $(document).mouseleave(()=>{
+            $(".exit").show()
+        })
+        $("#button").click(()=>{
+            $("#square").fadeToggle()
+        })
+        $("#button2").click(()=>{
+            $("#square2").slideToggle()
+        })
+        $("#button3").click(()=>{
+            $("#square3").animate({width:300}, 5000, ()=>{
+                console.log("terminou")
+            })
+        })
+        $("#square4").hide(1000).show(1000)
+    </script>
+</body>
+</html>
